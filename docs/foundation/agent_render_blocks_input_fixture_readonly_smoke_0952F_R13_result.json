@@ -1,0 +1,60 @@
+{
+  "stage": "0952F_R13_AGENT_RENDER_BLOCKS_INPUT_FIXTURE_READONLY_SMOKE",
+  "stage_id": "0952F_R13_AGENT_RENDER_BLOCKS_INPUT_FIXTURE_READONLY_SMOKE",
+  "task_type": "readonly_smoke_only",
+  "final_status": "PASS",
+  "recommended_next_stage": "0952F_R14_AGENT_RENDER_BLOCKS_INPUT_FIXTURE_READONLY_SEAL",
+  "inherits_from": {
+    "0952F_R12": "docs/foundation/agent_render_blocks_input_fixture_readonly_apply_0952F_R12_result.json"
+  },
+  "added_files": [
+    "docs/audit/agent_render_blocks_input_fixture_readonly_smoke_0952F_R13_report.md",
+    "docs/foundation/agent_render_blocks_input_fixture_readonly_smoke_0952F_R13_result.json",
+    "scripts/validate_agent_render_blocks_input_fixture_readonly_smoke_0952F_R13.py",
+    "docs/audit_packages/agent_render_blocks_input_fixture_readonly_smoke_0952F_R13_manifest.json",
+    "docs/audit_packages/agent_render_blocks_input_fixture_readonly_smoke_0952F_R13.zip"
+  ],
+  "smoke_targets": {
+    "r12_helper_autorun": false,
+    "lesson_fixture_deep_copy": "PASS",
+    "compat_fixture_deep_copy": "PASS",
+    "lesson_validateFixtureShape": "PASS",
+    "compat_validateFixtureShape": "PASS",
+    "lesson_renderBlocks": "PASS",
+    "compat_renderBlocks": "PASS",
+    "lesson_types": ["heading", "paragraph", "markdown", "list", "table", "evidence", "review_gate", "action_bar"],
+    "compat_types": ["legacy_card", "card_grid", "action_bar"],
+    "action_bar_dry_run_event_log": "PASS",
+    "append_action_events": "PASS",
+    "invalid_fixtures_exposed_to_helper": false,
+    "invalid_dangerous_html_render_blocks": "REJECT",
+    "invalid_action_real_write_render_blocks": "REJECT",
+    "networkCallCount": 0
+  },
+  "red_zone_flags": {
+    "frontend_business_files_modified": false,
+    "backend_runtime_modified": false,
+    "index_html_modified": false,
+    "endpoint_created": false,
+    "real_agent_connected": false,
+    "provider_connected": false,
+    "runtime_connected": false,
+    "memory_read": false,
+    "memory_write": false,
+    "feishu_write": false,
+    "formal_scoring": false,
+    "formal_export": false,
+    "server_deploy": false,
+    "real_student_data_read": false,
+    "production_ready_claimed": false,
+    "full_browser_e2e_claimed": false
+  },
+  "validation": {
+    "py_compile": "PASS",
+    "node_smoke": "PASS",
+    "validator_no_arg": "PASS",
+    "validator_root_arg": "PASS",
+    "manifest_zip_alignment": "PASS",
+    "marker": "ALL_0952F_R13_AGENT_RENDER_BLOCKS_INPUT_FIXTURE_READONLY_SMOKE_CHECKS_OK"
+  }
+}

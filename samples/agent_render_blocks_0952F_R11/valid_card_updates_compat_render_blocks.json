@@ -1,0 +1,107 @@
+{
+  "fixture_id": "valid_card_updates_compat_render_blocks",
+  "fixture_stage": "0952F_R11_AGENT_RENDER_BLOCKS_INPUT_FIXTURE_CONTRACT",
+  "expected_validation": "PASS",
+  "render_blocks": {
+    "schema_version": "agent_render_blocks.v1",
+    "source_contract": "0952F_R10_AGENT_RENDER_BLOCKS_INPUT_CONTRACT",
+    "target": "right_workspace",
+    "mode": "readonly_preview",
+    "blocks": [
+      {
+        "block_id": "legacy_card:activity_2_candidate",
+        "type": "legacy_card",
+        "card_update": {
+          "card_id": "activity_2_candidate",
+          "teacher_title": "活动二预览",
+          "teacher_summary": "旧 card_updates 可映射为 legacy_card，仍需老师确认。",
+          "candidate_text": "用颜色卡片对比 3 组视觉关系，填写观察表。",
+          "status": "pending_review"
+        },
+        "status": "pending_review",
+        "source": {"kind": "card_updates", "card_id": "activity_2_candidate"},
+        "warnings": [],
+        "teacher_confirmation_required": true
+      },
+      {
+        "block_id": "card_grid:compat_cards",
+        "type": "card_grid",
+        "title": "兼容卡片组",
+        "cards": [
+          {
+            "block_id": "legacy_card:task_sheet_candidate",
+            "type": "legacy_card",
+            "card_update": {
+              "card_id": "task_sheet_candidate",
+              "teacher_title": "任务单草稿",
+              "teacher_summary": "任务单仍是预览草稿。",
+              "candidate_text": "观察、记录、制作、说明四步。",
+              "status": "pending_review"
+            },
+            "status": "pending_review",
+            "source": {"kind": "card_updates", "card_id": "task_sheet_candidate"},
+            "warnings": [],
+            "teacher_confirmation_required": true
+          },
+          {
+            "block_id": "legacy_card:resource_cards",
+            "type": "legacy_card",
+            "card_update": {
+              "card_id": "resource_cards",
+              "teacher_title": "资源候选",
+              "teacher_summary": "资源只作为备课预览。",
+              "candidate_text": "参考图、材料方法卡、表达词汇卡。",
+              "status": "pending_review"
+            },
+            "status": "pending_review",
+            "source": {"kind": "card_updates", "card_id": "resource_cards"},
+            "warnings": [],
+            "teacher_confirmation_required": true
+          }
+        ],
+        "status": "pending_review",
+        "source": {"kind": "card_updates"},
+        "warnings": [],
+        "teacher_confirmation_required": true
+      },
+      {
+        "block_id": "action_bar:compat_cards",
+        "type": "action_bar",
+        "actions": [
+          {"action_id": "accept_compat", "action_type": "accept", "label": "记录采用", "target_block_id": "card_grid:compat_cards", "effect": "dry_run_intent_only"},
+          {"action_id": "defer_compat", "action_type": "defer", "label": "记录稍后处理", "target_block_id": "card_grid:compat_cards", "effect": "dry_run_intent_only"}
+        ],
+        "status": "pending_review",
+        "source": {"kind": "card_updates"},
+        "warnings": [],
+        "teacher_confirmation_required": true
+      }
+    ],
+    "compatibility": {
+      "card_updates_preserved": true,
+      "legacy_card_allowed": true,
+      "card_grid_allowed": true
+    },
+    "safety": {
+      "teacher_review_required": true,
+      "safe_markdown_only": true,
+      "raw_html_allowed": false,
+      "dom_output_allowed": false,
+      "script_allowed": false,
+      "style_allowed": false,
+      "iframe_allowed": false,
+      "svg_allowed": false,
+      "javascript_url_allowed": false,
+      "endpoint_config_allowed": false,
+      "provider_config_allowed": false,
+      "provider_call_allowed": false,
+      "runtime_mutation_allowed": false,
+      "memory_read_allowed": false,
+      "memory_write_allowed": false,
+      "feishu_write_allowed": false,
+      "formal_scoring_allowed": false,
+      "formal_export_allowed": false,
+      "server_deploy_allowed": false
+    }
+  }
+}

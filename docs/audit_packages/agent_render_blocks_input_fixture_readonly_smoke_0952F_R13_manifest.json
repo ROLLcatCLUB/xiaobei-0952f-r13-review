@@ -1,0 +1,86 @@
+{
+  "stage_id": "0952F_R13_AGENT_RENDER_BLOCKS_INPUT_FIXTURE_READONLY_SMOKE",
+  "package_type": "github_review_audit_package",
+  "final_status": "PASS",
+  "recommended_next_stage": "0952F_R14_AGENT_RENDER_BLOCKS_INPUT_FIXTURE_READONLY_SEAL",
+  "zip_path": "docs/audit_packages/agent_render_blocks_input_fixture_readonly_smoke_0952F_R13.zip",
+  "zip_self_entry_count": 15,
+  "self_reference_policy": "manifest entry uses SELF_REFERENTIAL_MANIFEST; validator checks all other entries and zip path parity",
+  "files": [
+    {
+      "path": "frontend/workbench/agent_render_blocks_fixture_apply_0952F_R12.js",
+      "sha256": "d325ca21995190ecbdf5272b03eb02936d49e05618e5a7f99b5924db7059dfbf",
+      "size_bytes": 13941
+    },
+    {
+      "path": "frontend/workbench/workbench_dynamic_cards_v1.js",
+      "sha256": "ffb0f80b3345c2013a0219aa9ec7026f8801f72e0b9faf9c19088b99124155ee",
+      "size_bytes": 50010
+    },
+    {
+      "path": "frontend/workbench/workbench_agent_runtime_client_v1.js",
+      "sha256": "e2df3569ad8a992e50daeb6f399244a781475d9dc9020fccbfa64a1ea4a61b07",
+      "size_bytes": 19423
+    },
+    {
+      "path": "frontend/workbench/workbench_message_renderer_v1.js",
+      "sha256": "2dac24451b9c3dcdde782b628a07d3aaf8d0d7fec3115930f2357c495e97ad3d",
+      "size_bytes": 8037
+    },
+    {
+      "path": "frontend/workbench/workbench_markdown_renderer_v1.js",
+      "sha256": "0a1f6dd5614f30f8707d5b1b86cb7718f222d6388c74a3d595084d55da618764",
+      "size_bytes": 12035
+    },
+    {
+      "path": "frontend/workbench/workbench_markdown_engine_adapter_070H.js",
+      "sha256": "b16eb3893382642383c1c8c671a6427ba54165172c7485e62c6324314c5a8c49",
+      "size_bytes": 8751
+    },
+    {
+      "path": "docs/foundation/agent_render_blocks_input_fixture_readonly_apply_0952F_R12_result.json",
+      "sha256": "7d8ac9ed9e8debc2c710cfee2b33713fc2c416bfabe6b5244a09cdf699ddf179",
+      "size_bytes": 3296
+    },
+    {
+      "path": "samples/agent_render_blocks_0952F_R11/valid_lesson_design_render_blocks.json",
+      "sha256": "3b9daf001ea384cbea6102f7272de822356a960e2562c7fd5ce50e9d4e4ba3cf",
+      "size_bytes": 5216
+    },
+    {
+      "path": "samples/agent_render_blocks_0952F_R11/valid_card_updates_compat_render_blocks.json",
+      "sha256": "426c672471d4ba16748f3a63b5b405eaa3f6e8fa7f89c78dcefa38bc51b98f94",
+      "size_bytes": 4096
+    },
+    {
+      "path": "samples/agent_render_blocks_0952F_R11/invalid_dangerous_html_render_blocks.json",
+      "sha256": "ee0dd80748a9e165a0e918d833e477508502d6f455e7531d9a96c903d85febc6",
+      "size_bytes": 1858
+    },
+    {
+      "path": "samples/agent_render_blocks_0952F_R11/invalid_action_real_write_render_blocks.json",
+      "sha256": "c94d6cd756e1b01082121b82cc484275e34f47d1f3234a9e6a90b747209c032f",
+      "size_bytes": 1946
+    },
+    {
+      "path": "docs/audit/agent_render_blocks_input_fixture_readonly_smoke_0952F_R13_report.md",
+      "sha256": "2841a2bcc59daa446c0127ed08b9bd57e00c8118068dcee7640a8d77f4a3b620",
+      "size_bytes": 2168
+    },
+    {
+      "path": "docs/foundation/agent_render_blocks_input_fixture_readonly_smoke_0952F_R13_result.json",
+      "sha256": "323cf60e8b871accdfb50f5f67786a53d6863a9b4afce363d7b91178abb9e3fd",
+      "size_bytes": 2483
+    },
+    {
+      "path": "scripts/validate_agent_render_blocks_input_fixture_readonly_smoke_0952F_R13.py",
+      "sha256": "65bec7249daa710e27f30758305ac1fe526aee826a19102294bd850b4d318304",
+      "size_bytes": 23881
+    },
+    {
+      "path": "docs/audit_packages/agent_render_blocks_input_fixture_readonly_smoke_0952F_R13_manifest.json",
+      "sha256": "SELF_REFERENTIAL_MANIFEST",
+      "size_bytes": -1
+    }
+  ]
+}

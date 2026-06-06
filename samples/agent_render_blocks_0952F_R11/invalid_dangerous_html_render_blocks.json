@@ -1,0 +1,51 @@
+{
+  "fixture_id": "invalid_dangerous_html_render_blocks",
+  "fixture_stage": "0952F_R11_AGENT_RENDER_BLOCKS_INPUT_FIXTURE_CONTRACT",
+  "expected_validation": "REJECT",
+  "expected_reject_reason": "dangerous_html_or_script",
+  "render_blocks": {
+    "schema_version": "agent_render_blocks.v1",
+    "source_contract": "0952F_R10_AGENT_RENDER_BLOCKS_INPUT_CONTRACT",
+    "target": "right_workspace",
+    "mode": "readonly_preview",
+    "blocks": [
+      {
+        "block_id": "markdown:dangerous",
+        "type": "markdown",
+        "title": "危险 HTML 负例",
+        "content_format": "safe_markdown",
+        "markdown": "<script>window.__xbExecuted=true</script><style>body{display:none}</style><iframe src=\"https://example.invalid\"></iframe><svg onload=\"alert(1)\"></svg><a href=\"javascript:alert(1)\" onclick=\"alert(2)\">bad</a>",
+        "status": "pending_review",
+        "source": {"kind": "negative_fixture"},
+        "warnings": [],
+        "teacher_confirmation_required": true
+      }
+    ],
+    "compatibility": {
+      "card_updates_preserved": true,
+      "legacy_card_allowed": true,
+      "card_grid_allowed": true
+    },
+    "safety": {
+      "teacher_review_required": true,
+      "safe_markdown_only": true,
+      "raw_html_allowed": false,
+      "dom_output_allowed": false,
+      "script_allowed": false,
+      "style_allowed": false,
+      "iframe_allowed": false,
+      "svg_allowed": false,
+      "javascript_url_allowed": false,
+      "endpoint_config_allowed": false,
+      "provider_config_allowed": false,
+      "provider_call_allowed": false,
+      "runtime_mutation_allowed": false,
+      "memory_read_allowed": false,
+      "memory_write_allowed": false,
+      "feishu_write_allowed": false,
+      "formal_scoring_allowed": false,
+      "formal_export_allowed": false,
+      "server_deploy_allowed": false
+    }
+  }
+}

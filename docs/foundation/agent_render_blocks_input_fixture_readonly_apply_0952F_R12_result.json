@@ -1,0 +1,83 @@
+{
+  "stage": "0952F_R12_AGENT_RENDER_BLOCKS_INPUT_FIXTURE_READONLY_APPLY",
+  "stage_id": "0952F_R12_AGENT_RENDER_BLOCKS_INPUT_FIXTURE_READONLY_APPLY",
+  "task_type": "readonly_fixture_apply",
+  "final_status": "PASS",
+  "recommended_next_stage": "0952F_R13_AGENT_RENDER_BLOCKS_INPUT_FIXTURE_READONLY_SMOKE",
+  "inherits_from": {
+    "0952F_R10": "docs/foundation/agent_render_blocks_input_contract_0952F_R10.json",
+    "0952F_R11": "docs/foundation/agent_render_blocks_input_fixture_contract_0952F_R11.json"
+  },
+  "added_files": [
+    "frontend/workbench/agent_render_blocks_fixture_apply_0952F_R12.js",
+    "docs/audit/agent_render_blocks_input_fixture_readonly_apply_0952F_R12_report.md",
+    "docs/foundation/agent_render_blocks_input_fixture_readonly_apply_0952F_R12_result.json",
+    "scripts/validate_agent_render_blocks_input_fixture_readonly_apply_0952F_R12.py",
+    "docs/audit_packages/agent_render_blocks_input_fixture_readonly_apply_0952F_R12_manifest.json",
+    "docs/audit_packages/agent_render_blocks_input_fixture_readonly_apply_0952F_R12.zip"
+  ],
+  "modified_frontend_business_files": [],
+  "modified_backend_runtime_files": [],
+  "helper": {
+    "path": "frontend/workbench/agent_render_blocks_fixture_apply_0952F_R12.js",
+    "global_object": "window.XIAOBEI_AGENT_RENDER_BLOCKS_FIXTURE_APPLY_0952F_R12",
+    "autorun": false,
+    "page_entry_added": false,
+    "index_html_modified": false,
+    "uses_existing_renderer_only": "window.XIAOBEI_DYNAMIC_CARDS_V1.renderBlocks(fixture.render_blocks, target)",
+    "exposed_methods": [
+      "getLessonDesignFixture",
+      "getCardUpdatesCompatFixture",
+      "renderLessonDesignFixture",
+      "renderCardUpdatesCompatFixture",
+      "validateFixtureShape"
+    ],
+    "valid_fixtures_exposed": [
+      "valid_lesson_design_render_blocks",
+      "valid_card_updates_compat_render_blocks"
+    ],
+    "invalid_fixtures_exposed": []
+  },
+  "fixture_validation": {
+    "valid_lesson_design_render_blocks": "PASS",
+    "valid_card_updates_compat_render_blocks": "PASS",
+    "invalid_dangerous_html_render_blocks": "REJECT",
+    "invalid_action_real_write_render_blocks": "REJECT"
+  },
+  "readonly_boundaries": {
+    "no_auto_run": true,
+    "no_auto_write": true,
+    "no_runtime_call": true,
+    "action_bar_effect": "dry_run_intent_only",
+    "invalid_fixtures_validator_only": true,
+    "browser_e2e": false,
+    "production_ready": false
+  },
+  "red_zone_flags": {
+    "backend_runtime_modified": false,
+    "index_html_modified": false,
+    "endpoint_created": false,
+    "real_agent_connected": false,
+    "provider_connected": false,
+    "runtime_connected": false,
+    "memory_read": false,
+    "memory_write": false,
+    "feishu_write": false,
+    "formal_scoring": false,
+    "formal_export": false,
+    "server_deploy": false,
+    "real_student_data_read": false,
+    "action_bar_real_write_enabled": false,
+    "backend_native_render_blocks_generation_enabled": false,
+    "browser_e2e_claimed": false,
+    "production_ready_claimed": false
+  },
+  "validation": {
+    "py_compile": "PASS",
+    "node_check_helper": "PASS",
+    "validator_no_arg": "PASS",
+    "validator_root_arg": "PASS",
+    "manifest_zip_alignment": "PASS",
+    "marker": "ALL_0952F_R12_AGENT_RENDER_BLOCKS_INPUT_FIXTURE_READONLY_APPLY_CHECKS_OK"
+  }
+}

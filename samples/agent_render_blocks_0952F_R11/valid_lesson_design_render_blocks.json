@@ -1,0 +1,135 @@
+{
+  "fixture_id": "valid_lesson_design_render_blocks",
+  "fixture_stage": "0952F_R11_AGENT_RENDER_BLOCKS_INPUT_FIXTURE_CONTRACT",
+  "expected_validation": "PASS",
+  "render_blocks": {
+    "schema_version": "agent_render_blocks.v1",
+    "source_contract": "0952F_R10_AGENT_RENDER_BLOCKS_INPUT_CONTRACT",
+    "target": "right_workspace",
+    "mode": "readonly_preview",
+    "blocks": [
+      {
+        "block_id": "heading:lesson_overview",
+        "type": "heading",
+        "level": 2,
+        "title": "足球微缩模型大单元预览",
+        "status": "pending_review",
+        "source": {"kind": "agent_lesson_design_fixture"},
+        "warnings": [],
+        "teacher_confirmation_required": true
+      },
+      {
+        "block_id": "paragraph:lesson_summary",
+        "type": "paragraph",
+        "text": "本样例只描述右侧工作区可读内容，不进入成果包，不写入任何外部系统。",
+        "status": "pending_review",
+        "source": {"kind": "agent_lesson_design_fixture"},
+        "warnings": [],
+        "teacher_confirmation_required": true
+      },
+      {
+        "block_id": "markdown:lesson_plan",
+        "type": "markdown",
+        "title": "教学设计草稿",
+        "content_format": "safe_markdown",
+        "markdown": "**学习目标**\n\n- 观察足球微缩模型的比例与结构。\n- 用草图表达基本构思。\n- 说明材料选择理由。\n\n**确认边界**\n\n确认前只作为备课预览。",
+        "status": "pending_review",
+        "source": {"kind": "agent_lesson_design_fixture"},
+        "warnings": [],
+        "teacher_confirmation_required": true
+      },
+      {
+        "block_id": "list:lesson_steps",
+        "type": "list",
+        "ordered": true,
+        "items": [
+          {"text": "观察样例并标注结构。"},
+          {"text": "画出微缩模型草图。"},
+          {"text": "列出材料与连接方式。"}
+        ],
+        "status": "pending_review",
+        "source": {"kind": "agent_lesson_design_fixture"},
+        "warnings": [],
+        "teacher_confirmation_required": true
+      },
+      {
+        "block_id": "table:evidence_checks",
+        "type": "table",
+        "title": "学习证据检查",
+        "columns": [{"key": "item", "label": "项目"}, {"key": "status", "label": "状态"}],
+        "rows": [
+          {"item": "设计草图", "status": "待确认"},
+          {"item": "材料清单", "status": "待补充"},
+          {"item": "表达说明", "status": "待确认"}
+        ],
+        "status": "pending_review",
+        "source": {"kind": "agent_lesson_design_fixture"},
+        "warnings": [],
+        "teacher_confirmation_required": true
+      },
+      {
+        "block_id": "evidence:lesson_context",
+        "type": "evidence",
+        "title": "上下文依据",
+        "items": [
+          {"title": "课题", "summary": "足球微缩模型"},
+          {"title": "学科", "summary": "四年级美术"}
+        ],
+        "status": "pending_review",
+        "source": {"kind": "agent_lesson_design_fixture"},
+        "warnings": [],
+        "teacher_confirmation_required": true
+      },
+      {
+        "block_id": "review_gate:teacher_confirm",
+        "type": "review_gate",
+        "title": "教师确认",
+        "message": "确认前不会进入成果包，也不会写入外部系统。",
+        "blocking_reasons": [],
+        "status": "pending_review",
+        "source": {"kind": "agent_lesson_design_fixture"},
+        "warnings": [],
+        "teacher_confirmation_required": true
+      },
+      {
+        "block_id": "action_bar:lesson_preview",
+        "type": "action_bar",
+        "actions": [
+          {"action_id": "accept_preview", "action_type": "accept", "label": "记录采用", "target_block_id": "markdown:lesson_plan", "effect": "dry_run_intent_only"},
+          {"action_id": "refine_preview", "action_type": "refine", "label": "记录精修", "target_block_id": "markdown:lesson_plan", "effect": "dry_run_intent_only"},
+          {"action_id": "ask_followup", "action_type": "ask_followup", "label": "记录追问", "target_block_id": "review_gate:teacher_confirm", "effect": "dry_run_intent_only"}
+        ],
+        "status": "pending_review",
+        "source": {"kind": "agent_lesson_design_fixture"},
+        "warnings": [],
+        "teacher_confirmation_required": true
+      }
+    ],
+    "compatibility": {
+      "card_updates_preserved": true,
+      "legacy_card_allowed": true,
+      "card_grid_allowed": true
+    },
+    "safety": {
+      "teacher_review_required": true,
+      "safe_markdown_only": true,
+      "raw_html_allowed": false,
+      "dom_output_allowed": false,
+      "script_allowed": false,
+      "style_allowed": false,
+      "iframe_allowed": false,
+      "svg_allowed": false,
+      "javascript_url_allowed": false,
+      "endpoint_config_allowed": false,
+      "provider_config_allowed": false,
+      "provider_call_allowed": false,
+      "runtime_mutation_allowed": false,
+      "memory_read_allowed": false,
+      "memory_write_allowed": false,
+      "feishu_write_allowed": false,
+      "formal_scoring_allowed": false,
+      "formal_export_allowed": false,
+      "server_deploy_allowed": false
+    }
+  }
+}
